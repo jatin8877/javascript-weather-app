@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<!-- <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content"> -->
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a86d367dc1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <main>
+        <section class="glass">
+            <!-- ---------- current location--------- -->
+            <div class="current-location">
+                <div>
+                    <i class="fas fa-map-marker-alt"></i>
+                <span id="city-name"></span>
+                <span id="region-name"></span>
+                </div>
+                <div class="globe">
+                    <span id="country-name"></span>
+                    <img src="./images/globe.png" alt="globe">
+                </div>
+            </div>
+
+             <!-- ----------------today's weather ---------- -->
+             <div class="today-weather">
+                 <div id="weather-image">
+                     <img id="weather-img">
+                 </div>
+                 <span id="weather-name"></span>
+                 <h1 id="celcious"></h1>
+                 <span id="date-time"></span>
+             </div>
+
+             <!-- ----------- forcast ------------ -->
+             <p>Next 2 days</p>
+             <div class="forcast">
+                 <div class="day2">
+                     <span id="forcast-date-day2"></span>
+                     <img id="day2Image">
+                     <span id="forcast-name-day2"></span>
+                     <h2 id="forcast-celcious-day2"></h2>
+                 </div>
+                 <div class="day3">
+                    <span id="forcast-date-day3"></span>
+                    <img id="day3Image">
+                    <span id="forcast-name-day3"></span>
+                    <h2 id="forcast-celcious-day3"></h2>
+                 </div>
+             </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
